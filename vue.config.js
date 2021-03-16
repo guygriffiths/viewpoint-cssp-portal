@@ -28,6 +28,5 @@ module.exports = {
 	},
 	lintOnSave: true,
 	//publicPath: required for serving on github.io
-	//	process.env.NODE_ENV === 'production' ? '/viewpoint-cssp-portal/' : '/'
-	publicPath: '/'
+	publicPath: process.env.NODE_ENV === 'production' ? '/viewpoint-cssp-portal/' : '/'
 }
